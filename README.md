@@ -1,5 +1,9 @@
 # StaffSync
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-staff--sync--wine.vercel.app-blue?style=for-the-badge&logo=vercel)](https://staff-sync-wine.vercel.app/)
+
+> 🌐 **Live Website:** [https://staff-sync-wine.vercel.app/](https://staff-sync-wine.vercel.app/)
+
 StaffSync is an enterprise-ready, multi-tenant employee leave management and workplace scheduling platform built with **Next.js (App Router)**, **React 19**, **TypeScript**, **Tailwind CSS v4**, **Auth.js v5 (NextAuth)**, and **MongoDB Atlas** via Mongoose.
 
 ---
