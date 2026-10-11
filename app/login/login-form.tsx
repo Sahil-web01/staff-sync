@@ -62,8 +62,8 @@ export default function LoginForm() {
 
       router.push('/dashboard')
       router.refresh()
-    } catch {
-      setError('An unexpected error occurred. Please try again later.')
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'An unexpected error occurred. Please try again later.')
       setIsLoading(false)
     }
   }

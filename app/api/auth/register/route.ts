@@ -80,8 +80,9 @@ export async function POST(req: Request) {
     )
   } catch (error) {
     console.error('Registration error:', error)
+    const message = error instanceof Error ? error.message : 'Database connection error'
     return NextResponse.json(
-      { error: 'Failed to create account. Please try again later.' },
+      { error: `Registration error: ${message}` },
       { status: 500 }
     )
   }

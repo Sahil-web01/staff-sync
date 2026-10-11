@@ -3,6 +3,7 @@ import type { NextAuthConfig } from 'next-auth'
 const THIRTY_DAYS_SECONDS = 30 * 24 * 60 * 60 // 30 days (1 month)
 
 export const authConfig: NextAuthConfig = {
+  trustHost: true,
   providers: [],
   callbacks: {
     async jwt({ token, user }) {
